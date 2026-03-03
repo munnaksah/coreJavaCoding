@@ -1,0 +1,27 @@
+package com.kodawala.thread4;
+
+import java.util.concurrent.Callable;
+
+class MyTask implements Callable<Integer>{
+	
+	public Integer call() {
+		
+		return 0;
+		
+	
+	}
+	
+	
+	public int doTask() {
+		return 0;
+		
+	}
+	
+}
+
+public class Driver {
+	public static void main(String[] args) {
+		
+	}
+
+}

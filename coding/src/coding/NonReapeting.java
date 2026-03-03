@@ -1,0 +1,27 @@
+package coding;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class NonReapeting {
+
+	public static void main(String[] args) {
+		String s = "programmingg";
+		
+		Map<Character, Integer> map =  new HashMap<>();
+		
+		for(char c : s.toCharArray()) {
+			map.put(c, map.getOrDefault(c, 0)+1);
+			
+		}
+//		System.out.println(map);
+		
+		 for(char c : s.toCharArray()) {
+			 if(map.get(c)==1) {
+				 System.out.println("given the first non reapting char   "+ c);
+				 break;
+			 }
+		 }
+		
+	}
+}

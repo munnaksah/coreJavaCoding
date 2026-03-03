@@ -1,0 +1,51 @@
+package com.kodewala.inf2;
+
+interface IBank{
+	
+	public  void pay();
+	
+	
+	public void settle();
+	
+	public default void printPassbook() {
+		createConnection();
+		
+	}
+	
+	public static void createConnection() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public static void senSMSNotification() {
+		
+		//250(50 for connection + 2000 biz logic )
+		createConnection ();
+	}
+	
+//	private static void createConnection() {
+//		
+//	}
+}
+
+
+class HDFC implements IBank{
+
+	@Override
+	public void pay() {
+		
+	}
+
+	@Override
+	public void settle() {
+		
+	}
+	
+}
+
+
+
+public class Driver {
+
+}

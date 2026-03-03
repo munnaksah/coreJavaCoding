@@ -1,0 +1,37 @@
+package com.kodewala.abs1;
+
+abstract class Product{
+	
+	public  void  totalPrice() {
+		
+		
+	}
+	
+	
+	public abstract void itemName();
+	
+	
+}
+
+class Electronic extends Product {
+
+	@Override
+	public void itemName() {
+		
+	}
+	
+}
+
+
+ class Grocery extends Product {
+
+	@Override
+	public void itemName() {
+		
+	}
+	 
+ }
+
+public class Driver1 {
+
+}

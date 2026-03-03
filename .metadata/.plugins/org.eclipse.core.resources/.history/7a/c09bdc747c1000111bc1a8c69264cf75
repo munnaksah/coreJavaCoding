@@ -1,0 +1,47 @@
+package com.kodewala.abs1;
+
+abstract class Product {
+
+	public void display() {
+		System.out.println("Display all the product and prices: ");
+
+	}
+
+	public abstract void calculatePrice(String name, double amount);
+
+}
+
+class Electronic extends Product {
+
+	public Electronic(String string, double amount) {
+		super();
+	}
+
+	@Override
+	public void calculatePrice(String name, double amount) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Grocery extends Product {
+
+	@Override
+	public void calculatePrice(String name, double amount) {
+
+	}
+
+}
+
+public class Driver1 {
+
+	public static void main(String[] args) {
+		Product product = new Electronic("TV", 50000);
+	
+		
+		
+		
+		
+	}
+}

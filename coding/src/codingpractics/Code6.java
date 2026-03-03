@@ -1,0 +1,43 @@
+package codingpractics;
+
+import java.util.Scanner;
+
+// name
+//age
+// wiegth
+
+public class Code6 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("pls Enter your Name here");
+
+		while (!sc.hasNext()) {
+			System.out.println("Invalid input ! ple Enter a valid Integer. ");
+			sc.next();
+		}
+		String fullName = sc.nextLine();
+
+		System.out.println("pls Enter your age");
+   
+		while (!sc.hasNextInt()) {
+			System.out.println("Invalid input ! ple Enter a valid Integer. ");
+			sc.next();
+		}
+		int age = sc.nextInt();
+		System.out.println("ple Enter your  weigth");
+
+		while (!sc.hasNextInt()) {
+			System.out.println("Invalid input ! ple Enter a valid Integer.");
+			sc.next();
+		}
+		int weigth = sc.nextInt();
+
+		System.out.println(" collected Infomation");
+		System.out.println("fullName: " + fullName);
+		System.out.println("Age: " + age);
+		System.out.println("weigth: " + weigth);
+
+	}
+
+}

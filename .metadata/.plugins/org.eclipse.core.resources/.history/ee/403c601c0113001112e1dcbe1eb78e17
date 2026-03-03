@@ -1,0 +1,17 @@
+package com.kodewala.funcint;
+@FunctionalInterface
+interface ICalcul{
+	public abstract int doCalculation(int a, int b);
+	
+}
+
+public class Driver7 {
+	public static void main(String[] args) {
+		ICalcul cal = (i,j) ->{
+	return  	i+j;
+		};
+		System.out.println(cal.doCalculation(4, 06));
+		
+	}
+
+}

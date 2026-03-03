@@ -1,0 +1,39 @@
+//package oops;
+//
+//public class Encapsulation {
+//	public static void main(String[] args) {
+//		
+//	  int balance ;
+//      String name;
+//	
+//	
+//	
+//	public  Encapsulation (int balance, String name) {
+//		this.balance : balance;
+//		this.name : name;
+//		
+//		
+//		
+//	}
+//	
+//	
+//	public static void settSal(int balance,String name) {
+//		return;
+//	}
+//	// setter method   set the value 
+//	// get method get  the value nd read the  value
+//		
+//		
+//	
+//		
+////		public void getSal(Int balance, String name) {
+////			
+////		
+////			
+////		}
+//	}
+//	
+//	
+//	
+//
+//}

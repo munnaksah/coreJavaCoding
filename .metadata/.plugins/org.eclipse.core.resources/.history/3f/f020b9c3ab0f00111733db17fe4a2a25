@@ -1,0 +1,11 @@
+package codingpractics;
+
+public class Code10 {
+	int numbers[];
+	numbers = new int[5];
+	
+	numbers[0] = 15;
+	
+	
+
+}

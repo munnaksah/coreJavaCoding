@@ -1,0 +1,10 @@
+package com.kodewala.funcint;
+@FunctionalInterface
+interface ICalcul{
+	public abstract int doCalculation(int a, int b);
+	
+}
+
+public class Driver7 {
+
+}

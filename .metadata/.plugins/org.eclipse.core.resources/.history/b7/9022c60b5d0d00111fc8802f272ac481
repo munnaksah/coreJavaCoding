@@ -1,0 +1,45 @@
+package com.kodawala.thread4;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+class MyTask implements Callable<Integer>{
+	
+	int  numbers;
+	
+	public MyTask(int numbers) {
+		this.numbers = numbers;
+		
+	}
+	
+	
+	public Integer call() {
+		 int number = 20;
+		 System.out.println("thread runing  " +  Thread.currentThread().getName());
+		 
+		
+		return number;	
+	
+	}
+	
+	
+	public Integer doTask() {
+		int number = 30;
+		System.out.println(" thread runnig"+ Thread.currentThread().getName());
+		
+		return number;
+	}
+		
+}
+
+public class Driver {
+	public static void main(String[] args) {
+		ExecutorService service  = Executors.newFixedThreadPool(2);
+
+		
+
+		 
+	}
+
+}

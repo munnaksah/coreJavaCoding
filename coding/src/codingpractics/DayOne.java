@@ -1,0 +1,16 @@
+package codingpractics;
+// local variable 
+public class DayOne {
+	
+	public static void main(String[] args) {
+		
+		int balance = 0  ;
+		
+		System.out.println("tell me the balanc: "+  balance);
+		
+	}
+	
+	
+
+
+}

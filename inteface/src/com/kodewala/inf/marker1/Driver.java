@@ -1,0 +1,32 @@
+package com.kodewala.inf.marker1;
+
+
+class Person {
+	
+	public String name;
+
+	public Person(String name) {
+		
+		this.name = name;
+	}
+	
+	public void copy(Person p1) {
+		
+		Copy copy = new Copy();
+		copy.copyDocument(p1);
+		
+		
+	}
+
+	
+}
+
+public class Driver {
+	public static void main(String[] args) {
+		
+		Person p1 = new Person("");
+		p1.copy(p1);
+		
+	}
+
+}

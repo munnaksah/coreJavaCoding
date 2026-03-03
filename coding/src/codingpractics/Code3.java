@@ -1,0 +1,21 @@
+package codingpractics;
+
+public class Code3 {
+	
+	
+	public void OrderItem() {
+		String itemName = "Laptop";
+		int   quantity = 100;
+		
+		System.out.println("order place for "+ quantity + " " + itemName +"(s)." );
+			
+	}
+	
+	
+	public static void main(String[] args) {
+		Code3 code = new Code3();
+		code.OrderItem();
+		
+	}
+
+}

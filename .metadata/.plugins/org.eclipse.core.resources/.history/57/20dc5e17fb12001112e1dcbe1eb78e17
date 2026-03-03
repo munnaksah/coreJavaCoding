@@ -1,0 +1,23 @@
+package com.kodewala.funcint;
+
+
+interface Calcultors{
+	
+	public abstract int add(int a, int b);
+}
+
+
+ 
+
+public class Driver5  implements ICalcultorsICalcultors {
+	public static void main(String[] args) {
+		
+	}
+
+	@Override
+	public int add(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

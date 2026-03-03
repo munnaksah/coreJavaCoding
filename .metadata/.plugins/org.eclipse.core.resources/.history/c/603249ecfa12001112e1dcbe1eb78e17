@@ -1,0 +1,12 @@
+package com.kodewala.funcint;
+
+@FunctionalInterface
+interface ICalc{
+	
+	public abstract int add(int a, int b);
+}
+
+
+public class Driver5 {
+
+}

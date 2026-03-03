@@ -1,0 +1,45 @@
+package com.kodewala.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class JDBCConn {
+
+	public static void main(String[] args) {
+
+		try {
+			// 1 . Register the driver or load driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			// 2. Create Connection
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/user_db", "root", "root");
+
+			System.out.println("Connected Successfully!");
+
+			// 3. Create Statement
+			Statement stmt = con.createStatement();
+
+			// 4. Execute Query
+			stmt.executeUpdate("CREATE TABLE student(id INT, name VARCHAR(100), age int , Address VARCHAR(100) )");
+			stmt.executeUpdate("INSERT INTO student VALUES (1, 'Munna', 25,'Bangalore')");
+
+			stmt.executeUpdate("INSERT INTO student VALUES (2, 'Rahul', 22 ,'Goa')");
+
+			stmt.executeUpdate("INSERT INTO student VALUES (3, 'Sandesh', 28,'Mirzapur')");
+
+			stmt.executeUpdate("INSERT INTO student VALUES (4, 'Deepak', 27,'Rewari')");
+
+			stmt.executeUpdate("INSERT INTO student VALUES (5, 'Sudhir', 28, 'Mumbai')");
+
+			System.out.println("Records Inserted!");
+
+//			System.out.println("Table Created!");
+
+			// 5. Close
+			con.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalcMainTest" project="Calculators" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.org.kodewala.Calculators.CalcMainTest" time="0.002" displayname="CalcMainTest" uniqueid="[engine:junit-jupiter]/[class:com.org.kodewala.Calculators.CalcMainTest]">
+    <testcase name="testAddNumberFirstZero" classname="com.org.kodewala.Calculators.CalcMainTest" time="0.002" displayname="testAddNumberFirstZero()" uniqueid="[engine:junit-jupiter]/[class:com.org.kodewala.Calculators.CalcMainTest]/[method:testAddNumberFirstZero()]"/>
+    <testcase name="testAddNumber" classname="com.org.kodewala.Calculators.CalcMainTest" time="0.0" displayname="testAddNumber()" uniqueid="[engine:junit-jupiter]/[class:com.org.kodewala.Calculators.CalcMainTest]/[method:testAddNumber()]"/>
+  </testsuite>
+</testrun>

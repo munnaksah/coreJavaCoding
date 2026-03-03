@@ -1,0 +1,49 @@
+package com.kodewala.abs1;
+
+abstract class Banking { // abstract + non abstract (concrete)
+
+	// in abstract class we can create object
+	// in abstract class constructor is there
+	// its not a 100% contract base
+
+	Banking() {
+		super();
+	}
+
+	// default func
+	public void addPayee(String payeeName) {
+
+	}
+
+	// abstract methods
+	public abstract void pay();
+
+	public abstract void settle();
+
+}
+
+class HDFC extends Banking {
+
+	HDFC() {
+		super();
+	}
+
+	Banking hd = new HDFC();
+
+	@Override
+	public void pay() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void settle() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+public class Driver {
+
+}

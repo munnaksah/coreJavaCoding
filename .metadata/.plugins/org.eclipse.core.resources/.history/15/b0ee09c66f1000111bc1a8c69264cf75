@@ -1,0 +1,30 @@
+package com.kodewala.inf2;
+
+interface IBank{
+	
+	public  void pay();
+	
+	
+	public void settle();
+}
+
+
+class HDFC implements IBank{
+
+	@Override
+	public void pay() {
+		
+	}
+
+	@Override
+	public void settle() {
+		
+	}
+	
+}
+
+
+
+public class Driver {
+
+}

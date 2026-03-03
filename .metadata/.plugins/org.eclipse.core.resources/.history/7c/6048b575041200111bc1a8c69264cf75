@@ -1,0 +1,29 @@
+package com.kodewala.inf.marker;
+class  Person implements Cloneable {
+	
+	public  String   pancard;
+	
+	
+	public Person( String pancard) {
+		this.pancard = pancard;
+		
+	}
+	
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
+	
+}
+
+public class Driver2 {
+	public static void main(String[] args) throws CloneNotSupportedException {
+		
+	Person p1 = new Person("pancard");
+	
+	
+	Person p2 = (Person)p1.clone();	
+	System.out.println(p2);
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.org.kodewala.Calculators;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class CalcMainTest {
+
+	public void testAddNumber() {
+
+		CalcMain calcMain = new CalcMain();
+		int excepted = 20;
+		int actual = calcMain.addNumber(5, 15);
+		
+		assertEquals(excepted, actual);
+
+	}
+
+}

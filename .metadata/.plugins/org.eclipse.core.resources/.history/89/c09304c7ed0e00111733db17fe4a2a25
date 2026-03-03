@@ -1,0 +1,14 @@
+package codingpractics;
+
+public class Day1 {
+	  String name ;
+	
+	public static void main(String[] args) {
+		Day1 day = new Day1();
+		
+		
+		System.out.println("tell me the balance :" + day.name);
+		
+	}
+
+}

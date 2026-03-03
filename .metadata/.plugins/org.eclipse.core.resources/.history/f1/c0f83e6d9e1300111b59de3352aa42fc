@@ -1,0 +1,14 @@
+package string;
+
+public class Driver6 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("START of main()");
+		
+		String name = null; // Obj is not yet created
+		System.out.println(name.length()); // NULLPOINTEREXCEPTION
+		
+		System.out.println("END of main()");
+	}
+}

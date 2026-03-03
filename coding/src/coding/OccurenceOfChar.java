@@ -1,0 +1,35 @@
+package coding;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class OccurenceOfChar {
+	
+	public static void main(String[] args) {
+		String s = "programing";
+		
+//		Map<Character, Integer> map = new HashMap<Character,Integer>();
+//		
+//		for(char c  : s.toCharArray()) {
+//			map.put(c, map.getOrDefault(c, 0)+1);
+//		
+//			
+//		}
+//		System.out.println(map);
+		
+		// using Stream Api 
+		 Map<Character, Long> result =
+	                s.chars()
+	                 .mapToObj(c -> (char) c)
+	                 .collect(Collectors.groupingBy(
+	                         Function.identity(),
+	                         Collectors.counting()
+	                 ));
+		
+//		Map<Character,Long> result = s.chars().mapToObj(c -> (char)c).collect(Collectors.groupingBy(Function.identity().collectors.counting())));
+		
+		System.out.println(result);
+	}
+}

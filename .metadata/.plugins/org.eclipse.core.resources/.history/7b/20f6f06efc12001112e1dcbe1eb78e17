@@ -1,0 +1,18 @@
+package com.kodewala.funcint;
+
+@FunctionalInterface
+interface IDivide{
+	
+	public  abstract int doDivid(int a, int b);
+}
+
+public class Driver6 {
+	public static void main(String[] args) {
+		
+		IDivide  dv = (a,b) -> a/b;
+		
+		System.out.println(dv);
+		
+	}
+
+}

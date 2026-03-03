@@ -1,0 +1,22 @@
+package codingpractics;
+
+public class Reverse {
+	public static void main(String[] args) {
+		
+		String str = "java  developer";
+		
+//		for(int i = str.length()-1;i>=0;i--) {
+////			System.out.print("give me the reversed order:" + str.charAt(i));
+//			System.out.print(str.charAt(i));
+//			
+//		}
+		
+		
+		StringBuffer  sb = new StringBuffer(str);
+		StringBuilder sbb = new StringBuilder(str);
+		System.out.println(sbb.reverse());
+		
+//		System.out.println(sb.reverse());
+	}
+
+}

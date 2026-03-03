@@ -1,0 +1,14 @@
+package com.kodewala.funcint;
+
+c
+interface ICalc{
+	
+	public abstract int add(int a, int b);
+}
+
+
+ 
+
+public class Driver5  implements ICalc {
+
+}
