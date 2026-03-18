@@ -6,27 +6,29 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class MyCallable  implements Callable<Integer>{
+public class MyCallable implements Callable<Integer> {
 
+	// interface
+	// call method
+	// throw exception (checked exception)
+	// give return
+	// in callbalbe we use the submit method
 
+	@Override
+	public Integer call() throws Exception {
 
-@Override
-public Integer call() throws Exception {
-	
-	return 50+60;
-}
+		return 50 + 60;
+	}
 
-public static void main(String[] args) throws InterruptedException, ExecutionException {
-	ExecutorService executor = Executors.newCachedThreadPool();
-	
-	MyCallable mc = new MyCallable();
-	Future<Integer> future =executor.submit(mc);
-	Integer result  = future.get();
-	System.out.println("give me output" + result);
-	executor.shutdown();
-	
-}
+	public static void main(String[] args) throws InterruptedException, ExecutionException {
+		ExecutorService executor = Executors.newCachedThreadPool();
 
+		MyCallable mc = new MyCallable();
+		Future<Integer> future = executor.submit(mc);
+		Integer result = future.get();
+		System.out.println("give me output" + result);
+		executor.shutdown();
 
+	}
 
 }

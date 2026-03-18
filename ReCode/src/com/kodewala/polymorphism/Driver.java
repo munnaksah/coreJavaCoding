@@ -13,6 +13,12 @@ class Registration {
 	void doRegistration(String mobile, int otp) {
 		System.out.println("Registration using mobile:" + mobile + " with OTP:" + otp);
 	}
+	
+
+	// different number of parameters 
+		void doRegistration(String mobile, int otp,String name) {
+			System.out.println("Registration using mobile:" + mobile + " with OTP:" + otp);
+		}
 
 // different types of parameter
 	void doRegistration(String name, String email) {

@@ -1,5 +1,5 @@
 package com.kodewala.inf.marker;
-// clonable- copy object (photo copy)
+// Cloneable - copy object (photo copy)
 class Account  implements Cloneable{
 	
 	public String name ;

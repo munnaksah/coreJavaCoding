@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\SCL\eclipse-workspace\javaApplication\src\Test\src\main\webapp\index.jsp"/>
+			<item value="C:\Users\SCL\eclipse-workspace\javaApplication\src\Test"/>
+			<item value="C:\Users\SCL\eclipse-workspace\javaApplication\src\Abstract"/>
 			<item value="C:\Users\SCL\eclipse-workspace\javaApplication\src\Calculators\src\test\java\com\org\kodewala\Calculators\CalcMainTest.java"/>
 			<item value="C:\Users\SCL\eclipse-workspace\javaApplication\src\junit-sample\pom.xml"/>
 			<item value="C:\Users\SCL\eclipse-workspace\javaApplication\src\TestApp"/>
@@ -34,10 +37,21 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.kodewala"/>
+			<item value="com.kodewala.Test1P"/>
+			<item value="com.kodewala.SPringtest"/>
+			<item value="com.kodewala.Test"/>
+			<item value="com.kodewala."/>
 		</list>
 		<list key="groupId">
+			<item value="com.kodewala"/>
 		</list>
 		<list key="artifactId">
+			<item value="PrepProject"/>
+			<item value="Test1P"/>
+			<item value="SPringtest"/>
+			<item value="Test"/>
+			<item value="ECommerceJDBC"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

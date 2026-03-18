@@ -1,4 +1,4 @@
-package com.kodawala.thread;
+ package com.kodawala.thread;
 // method level of synchronized
 class Bank {
 	int balance  = 3000;
@@ -7,7 +7,7 @@ class Bank {
 		for(int i = 0; i<6;i++) {
 			
 			balance = balance-amount;
-			System.out.println("balance after debit "+amount+" = "+balance+"excuttedby" + Thread.currentThread() );
+			System.out.println("balance after debit "+amount+" = "+ balance +"excuttedby" + Thread.currentThread() );
 			
 		}
 		

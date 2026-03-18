@@ -6,63 +6,51 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+class MyTask implements Callable<Integer> {
 
+	int numbers;
 
-class MyTask implements Callable<Integer>{
-	
-	int  numbers;
-	
 	public MyTask(int numbers) {
 		this.numbers = numbers;
-		
+
 	}
-	  
-	
+
 	public Integer call() {
-		 int number = 20;
-		 System.out.println("thread runing  " +  Thread.currentThread().getName());
-		 
-		
-		return number;	
-	
+		int number = 20;
+		System.out.println("thread runing  " + Thread.currentThread().getName());
+
+		return number;
+
 	}
-	
-	
+
 	public Integer doTask() {
 		int number = 30;
-		System.out.println(" thread runnig"+ Thread.currentThread().getName());
-		
+		System.out.println(" thread runnig" + Thread.currentThread().getName());
+
 		return number;
 	}
-		
+
 }
 
 public class Driver {
 	public static void main(String[] args) {
-		ExecutorService service  = Executors.newFixedThreadPool(2);
-		
-		for(int i = 0; i<2;i++) {
+		ExecutorService service = Executors.newFixedThreadPool(2);
+
+		for (int i = 0; i < 2; i++) {
 			Future<Integer> future1 = service.submit(new MyTask(i));
 			Future<Integer> future2 = service.submit(new MyTask(i));
 			try {
-				int result = future1.get()+future2.get();
-			} catch(InterruptedException | ExecutionException e) {
-				
+				int result = future1.get() + future2.get();
+			} catch (InterruptedException | ExecutionException e) {
+
 				e.printStackTrace();
-				
+
 			}
-		
-			
-			
-			
-			
+
 			service.submit(new MyTask(i));
 		}
 		service.shutdown();
 
-		
-
-		 
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.kodewala.exception;
+ package com.kodewala.exception;
 
 public class Driver {
 	public static void main(String[] args) {

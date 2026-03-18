@@ -7,7 +7,8 @@ interface IBank {
 	// in interface automatic method is public abstract
 	// in interface support multiple inheritance
 	// in interface do not create object
-	// that why do not have Constrcutor
+	// that why do not have Constructor
+	// in interface always variables is constant that means public static final
 	public void pay();
 
 	public void settle();
