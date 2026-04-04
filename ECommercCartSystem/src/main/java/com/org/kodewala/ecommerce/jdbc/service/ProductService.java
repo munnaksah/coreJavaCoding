@@ -44,8 +44,7 @@ public class ProductService {
 	}
 
 	public void findProductByKeyWord(List<Product> products, String keyWord) {
-		products = products.stream().filter(n -> n.getProductName().toLowerCase().contains(keyWord.toLowerCase()))
-				.toList();
+		products = products.stream().filter(n -> n.getProductName().toLowerCase().contains(keyWord.toLowerCase())).collect(Collectors.toList());
 		if (products.isEmpty()) {
 			System.out.println("No products found!!");
 		} else {

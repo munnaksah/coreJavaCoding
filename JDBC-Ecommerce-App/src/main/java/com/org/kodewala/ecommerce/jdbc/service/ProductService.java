@@ -67,8 +67,8 @@ public class ProductService {
 
 	public void findProductByKeyWord(List<Product> products, String keyWord) {
 		logger.debug("Searching for product with KEYWORD {}", keyWord);
-		products = products.stream().filter(n -> n.getProductName().toLowerCase().contains(keyWord.toLowerCase()))
-				.toList();
+		products = products.stream().filter(n -> n.getProductName().toLowerCase().contains(keyWord.toLowerCase())).collect(Collectors.toList());
+				
 		if (products.isEmpty()) {
 			logger.warn("NO products found for keyword !!!", keyWord);
 			System.out.println("No products found!!");
